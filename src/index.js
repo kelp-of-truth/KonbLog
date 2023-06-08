@@ -26,8 +26,9 @@ function fixContents(){
     }else{
         $(".hbgrMenu").css("display","none");
     }
-    $("main").css("scroll-padding-top",`${$("header").height()}px`);
-    $("main").css("margin-top",`${$("header").height()-20}px`);
+    // alert(`${Math.floor(Number($("header").height()))}px`)
+    $("main").css("margin-top",`${$("header").height()}px`);
+    $("#scrollMargin").text(`:target{scroll-margin: calc(1rem + ${$("header").height()}px);}`)
     $(".mobileMenu").css("top",`${$("header").height()}px`);
 }
 
