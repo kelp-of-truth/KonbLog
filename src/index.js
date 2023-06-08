@@ -21,6 +21,11 @@ $(".hbgrMenu").click(function () {
 
 
 function fixContents(){
+    if(window.innerWidth<window.innerHeight){
+        $(".hbgrMenu").css("display","block");
+    }else{
+        $(".hbgrMenu").css("display","none");
+    }
     $("main").css("scroll-padding-top",`${$("header").height()}px`);
     $("main").css("margin-top",`${$("header").height()-20}px`);
     $(".mobileMenu").css("top",`${$("header").height()}px`);
