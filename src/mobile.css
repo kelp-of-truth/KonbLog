@@ -29,9 +29,13 @@
         display: none;
     }
     header{
+        height: 135px;
         margin: 0px;
         padding: 0px;
     }
+    :
+    target{
+        scroll-margin: 135px;
     .articleTitle{
         font-size: 39px;
         line-height: 1.5em;
