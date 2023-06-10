@@ -43,8 +43,8 @@
     .mobileMenu{
         position: fixed;
         background-color: #ffffffe3;
-        backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
         z-index: 99999998;
         display: block;
         left: 0px;
