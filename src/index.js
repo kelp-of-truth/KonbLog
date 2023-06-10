@@ -12,7 +12,7 @@ $(".hbgrMenu").click(function () {
     $(".mobileMenu").toggleClass("open");
     setTimeout(() => {
         $(".mobileMenu").css("height","0px")
-        $(".mobileMenu.open").css("height",`calc(100vh - ${$("header").height()}px)`);
+        $(".mobileMenu.open").css("height",`calc(100vh - ${$("header").height()}px); !important`);
     }, 1);
 });
 
