@@ -1,0 +1,233 @@
+/* Colors */
+/* :root{
+    --rose: #fb7185;
+    --pink: #f472b6;
+    --fuchsia: #e879f9;
+    --purple: #c084fc;
+    --violet: #a78bfa;
+    --indigo: #818cf8;
+    --blue: #60a5fa;
+    --sky: #38bdf8;
+    --cyan: #22d3ee;
+    --teal: #2dd4bf;
+    --emerald: #34d399;
+    --green: #4ade80;
+    --lime: #a3e635;
+    --yellow: #facc15;
+    --amber: #fbbf24;
+    --orange: #fb923c;
+    --red: #f87171;
+    --stone: #a8a29e;
+    --neutral: #a3a3a3;
+    --zinc: #a1a1aa;
+    --gray: #9ca3af;
+    --slate: #94a3b8;
+    --black: #;
+} */
+/* Theme color */
+:root{
+    --white: #ecfdf5;
+    --whitegreen: #a7f3d0;
+    --emerald: #34d399;
+    --green: #10b981;
+    --black: #082f49;
+
+    
+}
+/* Font size */
+:root{
+    --small: 20px;
+    --normal: 22px;
+    --large: 26px;
+    --larger: 32px;
+    --largest: 48px;
+}
+
+
+
+.gaming{
+    background: linear-gradient(25deg, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+    animation: gaming 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+@keyframes gaming{
+    100%{
+        background-position: 200%;
+    }
+}
+
+
+@font-face {
+    font-family: HiraginoMaruGo;
+    src: url(./HiraginoMaruGo.ttc);
+}
+@font-face {
+    font-family: Dot;
+    src: url(./PixelMplus12-Regular.ttf);
+}
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Dot;
+    /* font-weight: bold; */
+}
+html{
+    position: relative;
+    background: url(./background.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+main{
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.445);
+    border: 3px solid rgb(53, 53, 53);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    width: 55vw;
+    height: 90vh;
+    background-color: #0000006c;
+    top: 5vh;
+    left: 20vw;
+    position: relative;
+    font-size: var(--normal);
+    line-height: 1.5em;
+    color: var(--white);
+    overflow: scroll;
+}
+
+
+/* header{
+    font-family: HiraginoMaruGo;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #ffffff48;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    height: 60px;
+    border-bottom: 1px solid rgb(116, 116, 116);
+}
+.headerNav ul{
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    list-style: none;
+}
+.headerNav ul li{
+    display: inline-block;
+    margin-right: var(--normal);
+}
+.headerNav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+.headerNav li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: 250ms ease-out;
+}
+    
+.headerNav li a:hover::after {
+    transform: scale(1, 1);
+} */
+
+
+article{
+    padding-top: 60px;
+}
+.avatar{
+    animation: gaming-frame 5s linear infinite;
+    padding: 5px;
+}
+@keyframes gaming-frame{
+    0%{
+        background-color: magenta;
+    }
+    33%{
+        background-color: yellow;
+    }
+    66%{
+        background-color: Cyan;
+    }
+    100%{
+        background-color: magenta;
+    }
+}
+article ul{
+    list-style: square;
+}
+article a{
+    color: var(--emerald);
+    text-decoration: none;
+}
+article a:hover{
+    text-decoration: underline;
+}
+td{
+    padding: 0.25em;
+}
+button{
+    font-size: 1em;
+    font-family: inherit;
+}
+.detailContact button{
+    background-color: unset;
+    color: var(--white);
+    padding: 0.5em;
+    border: 2px solid var(--white);
+    font-weight: bold;
+    float: right;
+    position: relative;
+    bottom: 5rem;
+    font-size: var(--large);
+    transition: 250ms;
+    cursor: pointer;
+}
+.detailContact:hover button{
+    background-color: var(--emerald);
+}
+footer{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* height: 6rem; */
+}
+
+@media screen and (max-width: 100vh) {
+    html{
+        background-size: auto 100vh;
+    }
+    main{
+        width: 85vw;
+        left: 5vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+    .detailContact button{
+        bottom: 1rem;
+    }
+}
