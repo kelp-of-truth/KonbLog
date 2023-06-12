@@ -5,6 +5,10 @@
     src: url(./ヒラギノ丸ゴ\ ProN\ W4.ttc);
 }
 @font-face {
+    font-family: Inconsolata;
+    src: url(./Inconsolata.ttf);
+}
+@font-face {
     font-family: k-font;
     src: url(./keifont.ttf);
 }
