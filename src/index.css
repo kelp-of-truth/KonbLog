@@ -193,6 +193,7 @@ article h2{
     font-size: 1.5em;
 }
 article code{
+    font-family: Inconsolata;
     background-color: #c0c0c099;
     padding: 0.2em;
     border-radius: 0.4em;
