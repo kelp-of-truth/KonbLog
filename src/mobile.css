@@ -33,9 +33,9 @@
         margin: 0px;
         padding: 0px;
     }
-    :
-    target{
+    :target{
         scroll-margin: 135px;
+    }
     .articleTitle{
         font-size: 39px;
         line-height: 1.5em;
