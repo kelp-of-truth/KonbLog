@@ -10,9 +10,9 @@ window.addEventListener("resize",()=>{
 $(".hbgrMenu").click(function () {
     $(this).toggleClass('active');
     $(".mobileMenu").toggleClass("open");
-    setTimeout(() => {
+    setTimeout(() => {;
         $(".mobileMenu").css("height","0px")
-        $(".mobileMenu.open").css("height",`calc(100vh - ${$("header").height()}px);`);
+        $(".mobileMenu.open").css("height",`calc(100vh - ${$("header").height()}px)`);
     }, 1);
 });
 
