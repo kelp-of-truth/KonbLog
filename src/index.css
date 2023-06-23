@@ -196,8 +196,8 @@ article code{
     display: inline-block;
     font-family: Inconsolata;
     background-color: #c0c0c099;
-    padding: 0.2em;
-    border-radius: 0.4em;
+    padding: 0.1em;
+    border-radius: 0.2em;
 }
 article .note{
     padding: 0.5em;
